@@ -1,0 +1,241 @@
+/*--------- fonts ---------*/
+  
+.pBig {  
+    font-family: 'Libre Caslon Text', sans-serif;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 32px; }
+
+.pSm {  
+    font-family: 'Libre Caslon Text', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 28px; }
+
+.h3Bold {  
+    font-family: 'Libre Caslon Text', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal; }
+
+/*--------- About ---------*/
+  
+.about {
+    width: 100%;
+    height: auto; 
+    margin-top: 120px;
+    margin-bottom: 90px;}
+  
+.about__box {
+    width: 90%;
+    height: auto;
+    margin-left:  5%; }  
+    
+.about__title{
+    width: 100%;
+    height: auto;
+    margin-top: 90px; }  
+
+.about__txt{
+    width: 100%;
+    height: auto;
+    margin-top: 90px;
+    display: grid;
+    grid-template-areas: "btn txt";
+    grid-template-columns: 1fr minmax(0, 566px); 
+    align-items: end; }  
+
+    .about__txt a{
+        grid-area: btn; }  
+
+    .about__txt p{
+        grid-area: txt; }  
+    
+        .about__txt a button{
+            width: 200px;
+            height: 48px;
+            padding: 0px 24px;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            gap: 12px;
+            flex-shrink: 0;
+            border-radius: 24px;
+            background: #95FF56;
+            box-shadow: 0px 0px 12px 0px rgba(149, 255, 86, 0.31); } 
+
+            .about__txt a button p{
+                color: #0D342B;
+                font-size: 16px;
+                font-family: 'Inter', sans-serif;    
+                font-style: normal;
+                font-weight: 500;  } 
+
+/*--------- Line ---------*/
+
+.line {
+    width: 100%;
+    height: 1px; 
+    margin-top: 90px;
+    margin-bottom: 90px;
+    background-color: #EEE9E1;
+    opacity: 0.15;}
+
+
+/*--------- Philosophy ---------*/
+  
+.philo {
+    width: 100%;
+    height: auto; 
+    margin-top: 90px;
+    margin-bottom: 90px;}
+  
+.philo__box {
+    width: 90%;
+    height: auto;
+    margin-left:  5%; }  
+    
+.philo__title{
+    width: 100%;
+    height: auto;
+    margin-top: 90px; }  
+
+.philo__contain{
+    width: 100%;
+    height: auto;
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr minmax(0, 500px); 
+    align-items: start; }  
+
+.philo__txt{
+    max-width: 610px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 10%;
+    row-gap: 50px;}   
+        
+    .philo__item{
+        max-width: 250px;
+        height: auto;
+        display: flex;
+        flex-direction: column; }  
+
+        .philo__item h3{
+            margin-bottom: 32px;}  
+    
+    .philo__svg{
+        text-align: center;}  
+
+/*--------- Process ---------*/
+  
+.process {
+    width: 100%;
+    height: auto; 
+    margin-top: 110px;
+    margin-bottom: 90px;}
+  
+.process__box {
+    width: 90%;
+    height: auto;
+    margin-left:  5%; }  
+    
+.process__title{
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px; }  
+
+.process__txt{
+    max-width: 550px;
+    height: auto;
+    margin-bottom: 70px;  }  
+
+.process__bubbles{
+    width: 90%;
+    height: auto;
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 110px; }  
+
+/*--------- Experience ---------*/
+  
+.experie {
+    width: 100%;
+    height: auto; 
+    margin-top: 110px;
+    margin-bottom: 200px;}
+  
+.experie__box {
+    width: 90%;
+    height: auto;
+    margin-left:  5%; }  
+    
+.experie__title{
+    width: 100%;
+    height: auto;
+    margin-bottom: 50px; }  
+
+.experie__txt{
+    width: 100%;
+    height: auto;
+    margin-top: 90px;
+    display: grid;
+    grid-template-columns: 1fr minmax(0, 566px); 
+    align-items: end; }  
+
+.experie__item{
+    max-width: 280px;
+    height: auto;
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 30px; }  
+
+    .experie__item p{
+        color: #3A7265; 
+        margin-left: 20px;}  
+
+
+
+
+/* --------  @ MEDIA --------- */
+
+
+@media (max-width: 1024px) {
+
+    
+    .about__txt{
+        grid-template-areas: "txt" "btn";
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto; 
+        row-gap: 60px;
+        align-items: end; }  
+
+        .about__txt p{
+            max-width: 550px;}  
+
+    .philo__contain{
+        grid-template-columns: 1fr ; 
+        grid-template-rows: auto auto;
+        row-gap: 40px;
+        align-items: start; }  
+   
+    .experie__txt{
+        grid-template-columns: 1fr ; 
+        grid-template-rows: auto auto;
+        align-items: end; 
+        row-gap: 40px;}  
+
+        .experie__txt p{
+            max-width: 550px;}  
+
+}
+    

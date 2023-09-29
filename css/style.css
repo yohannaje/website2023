@@ -1,0 +1,365 @@
+/*--------- general ---------*/
+
+*  {margin: 0;
+    padding: 0; }
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  width: 100%;  }
+
+body {
+    background-color:#132D27;
+    color: #EEE9E1;
+    overflow-x: hidden;
+    transition: .3s ease all;   }
+
+::-moz-selection { /* Code for Firefox */
+  color: #EEE9E1;
+  background:  #102520; }
+
+::selection {
+  color: #EEE9E1;
+  background:  #102520; }
+
+/*--------- a link ---------*/
+
+a  {
+  text-decoration: none; }
+  
+a:link {
+  color: #EEE9E1;}
+
+a:visited {
+  color: #EEE9E1; }
+
+a:active {
+  color: #EEE9E1; }
+
+.aLink {
+  position: relative;
+  white-space: nowrap;
+  text-decoration: none;
+  -webkit-transition: all 0.4s ease;
+  transition: all 0.4s ease; }
+
+.aLink:hover {
+  font-style: italic;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease; }
+
+
+/*--------- button ---------*/
+
+button{
+    width: 104px;
+    height: 104px;
+    flex-shrink: 0;
+    background-color: #95FF56;
+    border-radius: 52px;
+    border: none;
+    text-align: center;
+    cursor: pointer; }
+
+button svg {
+    vertical-align: middle;}
+
+
+/*--------- fonts ---------*/
+
+@font-face {
+  font-family: 'Editorial New';
+  src: url('../assets/fonts/EditorialNew-Regular.ttf');  }
+
+.titleH1 {  
+  font-family: 'Editorial New', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 160px;
+  line-height: 180px; }
+
+.titleH2 {  
+  font-family: 'Editorial New', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 40px;
+  line-height: 40px; }
+
+.titleH3 {  
+  font-family: 'Editorial New', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 24px; }
+
+.h2 {  
+  font-family: 'Editorial New', sans-serif;
+  line-height: 60px; 
+  font-size: 60px;
+  font-style: normal;
+  line-height: normal;}
+
+.h3 {  
+  font-family: 'Libre Caslon Text', sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 44px; }
+
+.bubbleTxt {
+  font-family: 'Inter', sans-serif;    
+  font-size: 14px;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 14px;
+  letter-spacing: 0.7px;
+  border-radius: 100px;
+  border: 2px solid #EEE9E1;
+  padding: 13px 25px;}
+
+.navLinks {
+  font-family: 'Libre Caslon Text', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 32px; }
+
+h4 {  
+  font-family: 'Libre Caslon Text', sans-serif;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;}
+
+h5 {
+  font-family: 'Libre Caslon Text', sans-serif;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;}
+
+p {
+  font-family: 'Libre Caslon Text', sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px; }
+  
+/*--------- header_nav ---------*/
+
+.header {
+  width: 100%;
+  height: auto; }
+
+nav {
+  width: 100%;
+  height: 100px;
+  background-color: #132D27;
+  display: flex;
+  justify-content: center; }
+
+.header__nav {
+  height: 16px;
+  width: 90%;
+  position: relative;
+  top: 70px; }
+
+  .header__nav ul {
+    list-style: none;
+    float: right; }
+  
+  .header__nav ul li {
+    display: inline-block; } 
+
+.header__linkContact {
+  height: 25px;
+  width: 85%;
+  right: 0;
+  text-align: right;
+  position: absolute; } 
+
+  .header__linkContact li  {
+    margin-left: 40px; } 
+    
+
+/* -------  Hamburger -------- */
+
+#hamburger-icon {
+  margin: auto 0;
+  display: none;
+  cursor: pointer; }
+
+#hamburger-icon div {
+    width: 30px;
+    height: 3px;
+    background-color: #EEE9E1;
+    margin: 10px 0;
+    transition: 0.3s; }
+
+#hamburger-icon ul {
+    text-align: center;
+    width: 100%; }
+
+#hamburger-icon ul li{
+    width: 100%;}
+
+.hamburger-line{
+    border-top: 1px #EEE9E1 solid;
+    border-bottom: 1px #EEE9E1 solid;
+    border-left: none;
+    border-right: none; }
+
+.open .bar1 {
+    -webkit-transform: rotate(-45deg) translateX(-5px) translateY(4px);
+    transform: rotate(-45deg) translateX(-5px) translateY(4px); }
+
+.open .bar3 {
+    -webkit-transform: rotate(45deg) translateX(-5px) translateY(-5px);
+    transform: rotate(45deg) translateX(-5px) translateY(-5px); }
+
+.open .mobile__menu {
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-around;
+    z-index: 100;
+    top: 4rem;
+    left: 0;
+    padding-top: 10vh;
+    padding-bottom: 70%;
+    height: 70vh;
+    width: 100%; }
+
+.mobile__menu {
+    background-color:#132D27;
+    display: none;
+    position: absolute;
+    transition: .3s ease all; }
+
+    .mobile__menu li  {
+      list-style: none;  }
+
+    .mobile__menu li a {
+      color: #EEE9E1;
+      font-family: 'Editorial New', sans-serif;
+      font-size: 55px;
+      font-style: normal;
+      font-weight: normal; }
+
+
+/*--------- footer ---------*/
+
+.footer {
+  width: 100%;
+  height: auto; }
+
+  .footer__nav {
+    background-color: #112722;
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+  
+    .footer__nav ul {
+      list-style: none;}
+    
+    .footer__nav ul li {
+      display: inline-block; } 
+
+      .footer__nav ul li a{
+        text-align: center; } 
+  
+  .footer__linkContact {
+    height: 25px;
+    width: 100%;
+    text-align: center; } 
+  
+    .footer__linkContact li  {
+      margin: 0 20px;
+      padding: 0; } 
+  
+  
+/* --------  @ MEDIA --------- */
+
+@media (max-width: 768px) {
+
+  .header__nav  {
+    display: none; }
+
+  #hamburger-icon {
+      display: block; }
+
+  #hamburger-icon:active .mobile__menu {
+      transform: translateY(-100vh); }
+
+  .footer__nav {
+    background-color: #112722;
+    height: auto;
+    width: 100%;
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;}
+  
+  .footer__linkContact {
+    height: auto;
+    width: 50px;
+    text-align: center; } 
+  
+    .footer__linkContact li  {
+      margin: 8px 0;
+      padding: 0; } 
+
+}
+
+@media (max-width: 1024px) {
+
+  .titleH1 {  
+    font-size: 126px;
+    line-height: 126px; }
+  
+  .titleH2 {  
+    font-size: 28px;
+    line-height: 28px; }
+  
+  .titleH3 {  
+    font-size: 17px;
+    line-height: 17px; }
+  
+  .h2 {  
+    line-height: 55px; 
+    font-size: 42px; }
+  
+  .h3 {  
+    font-size: 21px;
+    line-height: 30px; }
+  
+  .bubbleTxt {
+    font-size: 12px;
+    line-height: 12px; 
+    letter-spacing: 0.5px; }
+  
+  .navLinks {
+    font-size: 14px;
+    line-height: 22px; }
+  
+  h4 {  
+    font-size: 13px;
+    line-height: 22px;}
+  
+  h5 {
+    font-size: 15px;
+    line-height: 22px;}
+  
+  p {
+    font-size: 17px;
+    line-height: 22px; }
+
+}
+
+@media (min-width: 768px) and (max-width: 1180px) {
+
+
+}
+
