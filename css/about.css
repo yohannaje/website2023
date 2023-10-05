@@ -208,12 +208,26 @@
 
 /* --------  @ MEDIA --------- */
 
+@media (max-width: 768px) {
+
+    .philo__txt{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        row-gap: 50px;}   
+
+    .philo__item{
+        max-width: 400px; }  
+
+    .philo__svg{
+        margin-top: 50px;}  
+
+}
 
 @media (max-width: 1024px) {
 
     .pBig {  
         font-size: 18px;
-        line-height: 23px; }
+        line-height: 24px; }
 
     .about__txt{
         grid-template-areas: "txt" "btn";
