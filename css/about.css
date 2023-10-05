@@ -211,7 +211,10 @@
 
 @media (max-width: 1024px) {
 
-    
+    .pBig {  
+        font-size: 18px;
+        line-height: 23px; }
+
     .about__txt{
         grid-template-areas: "txt" "btn";
         grid-template-columns: 1fr;

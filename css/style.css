@@ -286,7 +286,7 @@ nav {
 
   .titleH1 {  
     font-size: 85px;
-    line-height: 85px; }
+    line-height: 95px; }
 
   .titleH2 {  
     font-size: 24px;
@@ -325,7 +325,7 @@ nav {
 
   .titleH1 {  
     font-size: 120px;
-    line-height: 120px; }
+    line-height: 135px; }
 
   .titleH2 {  
     font-size: 28px;
@@ -364,8 +364,8 @@ nav {
     line-height: 22px;}
   
   p {
-    font-size: 17px;
-    line-height: 22px; }
+    font-size: 18px;
+    line-height: 23px; }
 
 }
 
