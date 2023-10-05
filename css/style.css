@@ -242,7 +242,7 @@ nav {
     .mobile__menu li a {
       color: #EEE9E1;
       font-family: 'Editorial New', sans-serif;
-      font-size: 55px;
+      font-size: 45px;
       font-style: normal;
       font-weight: normal; }
 
@@ -285,7 +285,7 @@ nav {
 @media (max-width: 768px) {
 
   .titleH1 {  
-    font-size: 85px;
+    font-size: 80px;
     line-height: 95px; }
 
   .titleH2 {  
