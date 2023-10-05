@@ -476,16 +476,20 @@
         margin-left: 0px; }
 
   .secAbout__contain {
-    grid-template-columns: 1fr 1fr ;
+    grid-template-columns: 1fr ;
     grid-template-rows: auto auto;
-    grid-template-areas: "title img" "txt img";
+    grid-template-areas: "title" "img" "txt";
     align-items: center;
-    column-gap: 5%; 
-    row-gap: 40px;
+    row-gap: 0px;
     margin-top: 70px; }    
 
+    .secAbout__bubblesBox {
+      margin-top: 20px; }
+  
       .secAbout__img img {
         margin-top: 0px;
-        margin-bottom: 80px; }
+        margin-bottom: 0px; 
+        transform: translateY(-30px);
+        max-width: 350px;}
 
 }
