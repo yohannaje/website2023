@@ -172,5 +172,8 @@
         grid-template-columns: 1fr; 
         grid-row: auto auto; }  
 
+    .contact__item h2{
+        padding: 32px 8px 28px 8px;}
+
 }
     
